@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Movie;
 
 class AdminLandingController extends Controller
 {
@@ -15,6 +16,8 @@ class AdminLandingController extends Controller
     public function index()
     {
         //
+        $movies = Movie::all();
+        return view("admin.index", compact("movies"));
     }
 
     /**

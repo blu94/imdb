@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class ProducerController extends Controller
+class AdminActorController extends Controller
 {
     /**
      * Display a listing of the resource.

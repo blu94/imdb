@@ -60,9 +60,6 @@
   {{-- Custom CSS --}}
 	<link href="{{asset("elmer/dist/css/style.css")}}" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="{{asset("css/main.css")}}?v={{$cache}}">
-  <link rel="stylesheet" media="screen and (max-width: 767px)" href="{{asset("css/mainSmall.css?c=".$cache)}}">
-  <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="{{asset("css/mainMedium.css?c=".$cache)}}">
-  <link rel="stylesheet" media="screen and (min-width: 1025px)" href="{{asset("css/mainWide.css?c=".$cache)}}">
   {{-- custom styles --}}
   @yield("styles")
 </head>
@@ -181,7 +178,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js" charset="utf-8"></script>
 
   {{-- vEllipsis --}}
-  <script src="{{asset("js/jquery.vEllipsis.js")}}" charset="utf-8"></script>
+  {{-- <script src="{{asset("js/jquery.vEllipsis.js")}}" charset="utf-8"></script> --}}
 
   {{-- light gallery --}}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery-all.min.js" charset="utf-8"></script>

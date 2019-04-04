@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class MovieController extends Controller
+class AdminProducerController extends Controller
 {
     /**
      * Display a listing of the resource.
