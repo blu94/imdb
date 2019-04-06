@@ -34,4 +34,24 @@
       </li>
     </ul>
   </li>
+  <li>
+    <a href="javascript:void(0);" data-toggle="collapse" data-target="#crewDrp" class="markSideBar" data-nav-lvl="crew">
+      <div class="pull-left">
+        <i class="fa fa-users mr-20"></i>
+        <span class="right-nav-text">crew</span>
+      </div>
+      <div class="pull-right">
+        <i class="zmdi zmdi-caret-down"></i>
+      </div>
+      <div class="clearfix"></div>
+    </a>
+    <ul id="crewDrp" class="collapse collapse-level-1 two-col-list">
+      <li>
+        <a href="{{route("admin.crew.index")}}" class="markSideBar" data-nav-lvl="crew-all">all crew</a>
+      </li>
+      <li>
+        <a href="{{route("admin.crew.create")}}" class="markSideBar" data-nav-lvl="crew-create">Create crew</a>
+      </li>
+    </ul>
+  </li>
 </ul>

@@ -23,7 +23,7 @@ class AdminMovieController extends Controller
     public function index()
     {
         //
-        $movies = Movie::all();
+        $movies = Movie::orderBy("created_at", "DESC")->get();
         return view("admin.movie.index", compact("movies"));
     }
 

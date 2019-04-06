@@ -47,27 +47,16 @@ Route::group(["middleware" => "admin"], function() {
     ]
   ]);
 
-  // admin actor controller
-  Route::resource("/admin/actor", "admin\AdminActorController", [
+  // admin crew controller
+  Route::resource("/admin/crew", "admin\AdminCrewController", [
     "names"=> [
-      "index"  => "admin.actor.index",
-      "create"  => "admin.actor.create",
-      "store"  => "admin.actor.store",
-      "edit"  => "admin.actor.edit",
-      "update"  => "admin.actor.update",
-      "destroy"  => "admin.actor.destroy"
-    ]
-  ]);
-
-  // admin producer controller
-  Route::resource("/admin/producer", "admin\AdminProducerController", [
-    "names"=> [
-      "index"  => "admin.producer.index",
-      "create"  => "admin.producer.create",
-      "store"  => "admin.producer.store",
-      "edit"  => "admin.producer.edit",
-      "update"  => "admin.producer.update",
-      "destroy"  => "admin.producer.destroy"
+      "index"  => "admin.crew.index",
+      "create"  => "admin.crew.create",
+      "show"  => "admin.crew.show",
+      "store"  => "admin.crew.store",
+      "edit"  => "admin.crew.edit",
+      "update"  => "admin.crew.update",
+      "destroy"  => "admin.crew.destroy"
     ]
   ]);
 });

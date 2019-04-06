@@ -16,7 +16,7 @@ class AdminLandingController extends Controller
     public function index()
     {
         //
-        $movies = Movie::all();
+        $movies = Movie::orderBy("created_at", "DESC")->get();
         return view("admin.index", compact("movies"));
     }
 
